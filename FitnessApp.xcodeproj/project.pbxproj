@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		2E56D10829AE3546DF4793A8 /* Pods_FitnessApp.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DECED3F7D65567E8CA53AE0B /* Pods_FitnessApp.framework */; };
+		9D35811A2A856F9200B6D834 /* ReristrViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D3581192A856F9200B6D834 /* ReristrViewController.swift */; };
 		9D5F5ABD2A83D0E200B685EE /* Padding.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D5F5ABC2A83D0E200B685EE /* Padding.swift */; };
 		9D6410F92A828A4200949D4C /* RegistrationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D6410F82A828A4200949D4C /* RegistrationController.swift */; };
 		9D862A972A826291009CA0D4 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D862A962A826291009CA0D4 /* AppDelegate.swift */; };
@@ -19,6 +20,7 @@
 
 /* Begin PBXFileReference section */
 		27914140EDA6A99D24136BC6 /* Pods-FitnessApp.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FitnessApp.debug.xcconfig"; path = "Target Support Files/Pods-FitnessApp/Pods-FitnessApp.debug.xcconfig"; sourceTree = "<group>"; };
+		9D3581192A856F9200B6D834 /* ReristrViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReristrViewController.swift; sourceTree = "<group>"; };
 		9D5F5ABC2A83D0E200B685EE /* Padding.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Padding.swift; sourceTree = "<group>"; };
 		9D6410F82A828A4200949D4C /* RegistrationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegistrationController.swift; sourceTree = "<group>"; };
 		9D862A932A826291009CA0D4 /* FitnessApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FitnessApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -106,6 +108,7 @@
 				9D6410F82A828A4200949D4C /* RegistrationController.swift */,
 				9D5F5ABC2A83D0E200B685EE /* Padding.swift */,
 				9D862AA42A826293009CA0D4 /* Info.plist */,
+				9D3581192A856F9200B6D834 /* ReristrViewController.swift */,
 				9D862A942A826291009CA0D4 /* Products */,
 			);
 			path = FitnessApp;
@@ -225,6 +228,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9D35811A2A856F9200B6D834 /* ReristrViewController.swift in Sources */,
 				9D862A9B2A826291009CA0D4 /* ViewController.swift in Sources */,
 				9D5F5ABD2A83D0E200B685EE /* Padding.swift in Sources */,
 				9D862A972A826291009CA0D4 /* AppDelegate.swift in Sources */,
