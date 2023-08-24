@@ -8,16 +8,26 @@
 
 /* Begin PBXBuildFile section */
 		2E56D10829AE3546DF4793A8 /* Pods_FitnessApp.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DECED3F7D65567E8CA53AE0B /* Pods_FitnessApp.framework */; };
+		9D18F4AB2A9789B200A7D89F /* Praxis.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D18F4AA2A9789B100A7D89F /* Praxis.swift */; };
+		9D35811A2A856F9200B6D834 /* ReristrViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D3581192A856F9200B6D834 /* ReristrViewController.swift */; };
+		9D5F5ABD2A83D0E200B685EE /* Padding.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D5F5ABC2A83D0E200B685EE /* Padding.swift */; };
 		9D6410F92A828A4200949D4C /* RegistrationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D6410F82A828A4200949D4C /* RegistrationController.swift */; };
 		9D862A972A826291009CA0D4 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D862A962A826291009CA0D4 /* AppDelegate.swift */; };
 		9D862A992A826291009CA0D4 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D862A982A826291009CA0D4 /* SceneDelegate.swift */; };
 		9D862A9B2A826291009CA0D4 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D862A9A2A826291009CA0D4 /* ViewController.swift */; };
 		9D862AA02A826293009CA0D4 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9D862A9F2A826293009CA0D4 /* Assets.xcassets */; };
 		9D862AA32A826293009CA0D4 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9D862AA12A826293009CA0D4 /* LaunchScreen.storyboard */; };
+		9D889B9A2A86859000B04592 /* UserProfile.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D889B992A86859000B04592 /* UserProfile.swift */; };
+		9D889B9E2A86862100B04592 /* StaticModel.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 9D889B9C2A86862100B04592 /* StaticModel.xcdatamodeld */; };
+		9D889BA02A8686DB00B04592 /* CoreDataStack.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D889B9F2A8686DB00B04592 /* CoreDataStack.swift */; };
+		9D889BA22A8688FE00B04592 /* MenuViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D889BA12A8688FE00B04592 /* MenuViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		27914140EDA6A99D24136BC6 /* Pods-FitnessApp.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FitnessApp.debug.xcconfig"; path = "Target Support Files/Pods-FitnessApp/Pods-FitnessApp.debug.xcconfig"; sourceTree = "<group>"; };
+		9D18F4AA2A9789B100A7D89F /* Praxis.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Praxis.swift; sourceTree = "<group>"; };
+		9D3581192A856F9200B6D834 /* ReristrViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReristrViewController.swift; sourceTree = "<group>"; };
+		9D5F5ABC2A83D0E200B685EE /* Padding.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Padding.swift; sourceTree = "<group>"; };
 		9D6410F82A828A4200949D4C /* RegistrationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegistrationController.swift; sourceTree = "<group>"; };
 		9D862A932A826291009CA0D4 /* FitnessApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FitnessApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		9D862A962A826291009CA0D4 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -26,6 +36,10 @@
 		9D862A9F2A826293009CA0D4 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		9D862AA22A826293009CA0D4 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		9D862AA42A826293009CA0D4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		9D889B992A86859000B04592 /* UserProfile.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserProfile.swift; sourceTree = "<group>"; };
+		9D889B9D2A86862100B04592 /* StaticModel.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = StaticModel.xcdatamodel; sourceTree = "<group>"; };
+		9D889B9F2A8686DB00B04592 /* CoreDataStack.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoreDataStack.swift; sourceTree = "<group>"; };
+		9D889BA12A8688FE00B04592 /* MenuViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuViewController.swift; sourceTree = "<group>"; };
 		C5E29BE1AB5B813240386270 /* Pods-FitnessApp.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FitnessApp.release.xcconfig"; path = "Target Support Files/Pods-FitnessApp/Pods-FitnessApp.release.xcconfig"; sourceTree = "<group>"; };
 		DECED3F7D65567E8CA53AE0B /* Pods_FitnessApp.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_FitnessApp.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
@@ -80,6 +94,7 @@
 		9D862A8A2A826291009CA0D4 = {
 			isa = PBXGroup;
 			children = (
+				9D889B9B2A86859800B04592 /* CoreData */,
 				9D6410F72A8289A200949D4C /* Resources */,
 				9D6410F62A82899000949D4C /* Application */,
 				9D862A952A826291009CA0D4 /* FitnessApp */,
@@ -100,12 +115,26 @@
 		9D862A952A826291009CA0D4 /* FitnessApp */ = {
 			isa = PBXGroup;
 			children = (
+				9D5F5ABC2A83D0E200B685EE /* Padding.swift */,
 				9D862A9A2A826291009CA0D4 /* ViewController.swift */,
+				9D889BA12A8688FE00B04592 /* MenuViewController.swift */,
 				9D6410F82A828A4200949D4C /* RegistrationController.swift */,
+				9D3581192A856F9200B6D834 /* ReristrViewController.swift */,
+				9D18F4AA2A9789B100A7D89F /* Praxis.swift */,
 				9D862AA42A826293009CA0D4 /* Info.plist */,
 				9D862A942A826291009CA0D4 /* Products */,
 			);
 			path = FitnessApp;
+			sourceTree = "<group>";
+		};
+		9D889B9B2A86859800B04592 /* CoreData */ = {
+			isa = PBXGroup;
+			children = (
+				9D889B992A86859000B04592 /* UserProfile.swift */,
+				9D889B9C2A86862100B04592 /* StaticModel.xcdatamodeld */,
+				9D889B9F2A8686DB00B04592 /* CoreDataStack.swift */,
+			);
+			path = CoreData;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -222,7 +251,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9D35811A2A856F9200B6D834 /* ReristrViewController.swift in Sources */,
+				9D889B9E2A86862100B04592 /* StaticModel.xcdatamodeld in Sources */,
 				9D862A9B2A826291009CA0D4 /* ViewController.swift in Sources */,
+				9D889BA02A8686DB00B04592 /* CoreDataStack.swift in Sources */,
+				9D889B9A2A86859000B04592 /* UserProfile.swift in Sources */,
+				9D889BA22A8688FE00B04592 /* MenuViewController.swift in Sources */,
+				9D5F5ABD2A83D0E200B685EE /* Padding.swift in Sources */,
+				9D18F4AB2A9789B200A7D89F /* Praxis.swift in Sources */,
 				9D862A972A826291009CA0D4 /* AppDelegate.swift in Sources */,
 				9D6410F92A828A4200949D4C /* RegistrationController.swift in Sources */,
 				9D862A992A826291009CA0D4 /* SceneDelegate.swift in Sources */,
@@ -435,6 +471,19 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		9D889B9C2A86862100B04592 /* StaticModel.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				9D889B9D2A86862100B04592 /* StaticModel.xcdatamodel */,
+			);
+			currentVersion = 9D889B9D2A86862100B04592 /* StaticModel.xcdatamodel */;
+			path = StaticModel.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
 	};
 	rootObject = 9D862A8B2A826291009CA0D4 /* Project object */;
 }
