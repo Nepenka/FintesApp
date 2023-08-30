@@ -12,3 +12,4 @@ class Praxis {
     static let praxis = ["Running", "Cycling", "Walking", "Meditation"]
     
 }
+

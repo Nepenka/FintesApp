@@ -1,70 +1,110 @@
-//
-//  StartViewController.swift
-//  FitnessApp
-//
-//  Created by 123 on 11.08.23.
-//
+
+
+
+
 
 
 import UIKit
 import SnapKit
 
-class MenuViewController: UIViewController, UITableViewDelegate, UITableViewDataSource {
+
+class MenuViewController: UIViewController {
     
-    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return Praxis.praxis.count
+    let textLabel = UILabel()
+    private let collectionView = UICollectionView(frame: .zero, collectionViewLayout: UICollectionViewLayout())
+    let exercise = Praxis.praxis
+    let screenWidth = UIScreen.main.bounds.size.width
+    let screenHeight = UIScreen.main.bounds.size.height
+    
+    override func viewDidLoad() {
+        super.viewDidLoad()
+        
+        view.backgroundColor = UIColor(red: 64/255, green: 224/255, blue: 208/255, alpha: 1)
+        navigationItem.hidesBackButton = true
+        setupUI()
+        setupViews()
     }
     
     
     
-    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCell(withIdentifier: "TableViewCell", for: indexPath) as! TableViewCell
+    
+    func setupUI() {
         
-        cell.textLabel?.text = Praxis.praxis[indexPath.row]
-        cell.textLabel?.font = UIFont.systemFont(ofSize: 16)
-        cell.textLabel?.textAlignment = .center
-        cell.textLabel?.layer.borderColor = UIColor.darkText.cgColor
-        cell.textLabel?.font = UIFont(name: "Helvetica-Bold", size: 15)
-       
+        textLabel.text = "Time for praxis"
+        textLabel.font = UIFont(name: "Helvetica-Bold", size: 38)
+        textLabel.textColor = .black
+        textLabel.shadowColor = .systemBlue
+        textLabel.shadowOffset = CGSize(width: 1, height: 2)
+        view.addSubview(textLabel)
+        
+        textLabel.snp.makeConstraints { make in
+            make.top.equalToSuperview().inset(100)
+            make.left.right.equalToSuperview().inset(30)
+        }
+        
+    }
+    
+    
+}
+
+extension MenuViewController {
+    private func setupViews() {
+        collectionView.backgroundColor = .clear
+        collectionView.contentInsetAdjustmentBehavior = .never
+        collectionView.showsHorizontalScrollIndicator = false
+        collectionView.showsVerticalScrollIndicator = false
+        collectionView.register(UICollectionViewCell.self, forCellWithReuseIdentifier: "Cell")
+        collectionView.dataSource = self
+        collectionView.delegate = self
+        view.addSubview(collectionView)
+        let layout = UICollectionViewFlowLayout()
+        layout.scrollDirection = .horizontal
+        layout.minimumLineSpacing = 4
+        layout.minimumInteritemSpacing = 4
+        collectionView.collectionViewLayout = layout
+        collectionView.snp.makeConstraints { make in
+            make.top.equalTo(textLabel.snp.bottom).offset(60)
+            make.right.left.equalToSuperview()
+            make.centerY.equalToSuperview()
+        }
+        
+    }
+}
+
+//MARK: - UICollectionViewDataSource
+
+extension MenuViewController: UICollectionViewDataSource {
+    func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
+        return exercise.count
+    }
+    
+    func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
+        let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "Cell", for: indexPath)
+        cell.layer.borderColor = UIColor.black.cgColor
+        cell.layer.borderWidth = 4
+        cell.contentView.backgroundColor = .white
         
         return cell
     }
     
-    func tableView(_ tableView: UITableView, heightForHeaderInSection section: Int) -> CGFloat {
-        return 10.0
+    
+}
+
+//MARK: - UICollectionViewDelegate
+
+extension MenuViewController: UICollectionViewDelegate {
+    func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
         
     }
-    
-    func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
-        return 50.0
-    }
-
-    let calendarView = UICalendarView()
-    let tableView = UITableView.init(frame: .zero, style: .grouped)
-   
-    override func viewDidLoad() {
-        super.viewDidLoad()
-
-        navigationItem.hidesBackButton = true
-        self.tableView.register(TableViewCell.self, forCellReuseIdentifier: "TableViewCell")
-        tableView.delegate = self
-        tableView.dataSource = self
-        view.addSubview(tableView)
-        tableView.backgroundColor = UIColor(red: 64/255, green: 224/255, blue: 208/255, alpha: 1)
-        tableView.snp.makeConstraints { make in
-            make.edges.equalToSuperview()
-        }
-    }
-    
-   
-    
 }
 
+//MARK: - UICollectionViewViewDelegateFlowLayout
 
-class TableViewCell: UITableViewCell {
-    override func layoutSubviews() {
-        super.layoutSubviews()
-        self.contentView.layer.cornerRadius = 10
-        self.contentView.layer.masksToBounds = true
+extension MenuViewController: UICollectionViewDelegateFlowLayout {
+    func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
+        let cellWidth = screenWidth / 2.0
+        let cellHeight: CGFloat = 200.0
+        return CGSize(width: cellWidth, height: cellHeight)
     }
 }
+
