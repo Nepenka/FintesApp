@@ -10,6 +10,6 @@ import UIKit
 
 class Praxis {
     static let praxis = ["Running", "Cycling", "Walking", "Meditation"]
-    
+    static let praxisImage = [UIImage(named: "running"), UIImage(named: "cycling"), UIImage(named: "walking"), UIImage(named: "meditation")]
 }
 

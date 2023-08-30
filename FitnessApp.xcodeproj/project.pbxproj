@@ -12,6 +12,7 @@
 		9D35811A2A856F9200B6D834 /* ReristrViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D3581192A856F9200B6D834 /* ReristrViewController.swift */; };
 		9D5F5ABD2A83D0E200B685EE /* Padding.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D5F5ABC2A83D0E200B685EE /* Padding.swift */; };
 		9D6410F92A828A4200949D4C /* RegistrationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D6410F82A828A4200949D4C /* RegistrationController.swift */; };
+		9D84BC2A2A9F5C6400A394E1 /* CustomLayout.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D84BC292A9F5C6400A394E1 /* CustomLayout.swift */; };
 		9D862A972A826291009CA0D4 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D862A962A826291009CA0D4 /* AppDelegate.swift */; };
 		9D862A992A826291009CA0D4 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D862A982A826291009CA0D4 /* SceneDelegate.swift */; };
 		9D862A9B2A826291009CA0D4 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D862A9A2A826291009CA0D4 /* ViewController.swift */; };
@@ -29,6 +30,7 @@
 		9D3581192A856F9200B6D834 /* ReristrViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReristrViewController.swift; sourceTree = "<group>"; };
 		9D5F5ABC2A83D0E200B685EE /* Padding.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Padding.swift; sourceTree = "<group>"; };
 		9D6410F82A828A4200949D4C /* RegistrationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegistrationController.swift; sourceTree = "<group>"; };
+		9D84BC292A9F5C6400A394E1 /* CustomLayout.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomLayout.swift; sourceTree = "<group>"; };
 		9D862A932A826291009CA0D4 /* FitnessApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FitnessApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		9D862A962A826291009CA0D4 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		9D862A982A826291009CA0D4 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -121,6 +123,7 @@
 				9D6410F82A828A4200949D4C /* RegistrationController.swift */,
 				9D3581192A856F9200B6D834 /* ReristrViewController.swift */,
 				9D18F4AA2A9789B100A7D89F /* Praxis.swift */,
+				9D84BC292A9F5C6400A394E1 /* CustomLayout.swift */,
 				9D862AA42A826293009CA0D4 /* Info.plist */,
 				9D862A942A826291009CA0D4 /* Products */,
 			);
@@ -257,6 +260,7 @@
 				9D889BA02A8686DB00B04592 /* CoreDataStack.swift in Sources */,
 				9D889B9A2A86859000B04592 /* UserProfile.swift in Sources */,
 				9D889BA22A8688FE00B04592 /* MenuViewController.swift in Sources */,
+				9D84BC2A2A9F5C6400A394E1 /* CustomLayout.swift in Sources */,
 				9D5F5ABD2A83D0E200B685EE /* Padding.swift in Sources */,
 				9D18F4AB2A9789B200A7D89F /* Praxis.swift in Sources */,
 				9D862A972A826291009CA0D4 /* AppDelegate.swift in Sources */,
