@@ -42,7 +42,8 @@ class MenuViewController: UIViewController {
         textLabel.text = "Time for praxis"
         textLabel.font = UIFont(name: "Helvetica-Bold", size: 38)
         textLabel.textColor = .black
-        textLabel.shadowColor = .systemBlue
+        textLabel.textAlignment = .center
+        textLabel.shadowColor = .white
         textLabel.shadowOffset = CGSize(width: 1, height: 2)
         view.addSubview(textLabel)
         
@@ -116,7 +117,8 @@ extension MenuViewController: UICollectionViewDataSource {
 
 extension MenuViewController: UICollectionViewDelegate {
     func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
-        
+        let actionController = ActionViewController()
+        navigationController?.pushViewController(actionController, animated: true)
     }
 }
 
@@ -171,7 +173,8 @@ class CustomCollectionViewCell: UICollectionViewCell {
     
     let imageView: UIImageView = {
         let imageView = UIImageView()
-        imageView.contentMode = .scaleAspectFit
+        imageView.contentMode = .scaleAspectFill
+        imageView.clipsToBounds = true
         return imageView
     }()
     

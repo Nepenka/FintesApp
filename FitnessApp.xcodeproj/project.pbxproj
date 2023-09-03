@@ -10,6 +10,7 @@
 		2E56D10829AE3546DF4793A8 /* Pods_FitnessApp.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DECED3F7D65567E8CA53AE0B /* Pods_FitnessApp.framework */; };
 		9D18F4AB2A9789B200A7D89F /* Praxis.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D18F4AA2A9789B100A7D89F /* Praxis.swift */; };
 		9D35811A2A856F9200B6D834 /* ReristrViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D3581192A856F9200B6D834 /* ReristrViewController.swift */; };
+		9D551A1F2AA4AC75006177EB /* ActionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D551A1E2AA4AC75006177EB /* ActionViewController.swift */; };
 		9D5F5ABD2A83D0E200B685EE /* Padding.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D5F5ABC2A83D0E200B685EE /* Padding.swift */; };
 		9D6410F92A828A4200949D4C /* RegistrationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D6410F82A828A4200949D4C /* RegistrationController.swift */; };
 		9D84BC2A2A9F5C6400A394E1 /* CustomLayout.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D84BC292A9F5C6400A394E1 /* CustomLayout.swift */; };
@@ -28,6 +29,7 @@
 		27914140EDA6A99D24136BC6 /* Pods-FitnessApp.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FitnessApp.debug.xcconfig"; path = "Target Support Files/Pods-FitnessApp/Pods-FitnessApp.debug.xcconfig"; sourceTree = "<group>"; };
 		9D18F4AA2A9789B100A7D89F /* Praxis.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Praxis.swift; sourceTree = "<group>"; };
 		9D3581192A856F9200B6D834 /* ReristrViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReristrViewController.swift; sourceTree = "<group>"; };
+		9D551A1E2AA4AC75006177EB /* ActionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ActionViewController.swift; sourceTree = "<group>"; };
 		9D5F5ABC2A83D0E200B685EE /* Padding.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Padding.swift; sourceTree = "<group>"; };
 		9D6410F82A828A4200949D4C /* RegistrationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegistrationController.swift; sourceTree = "<group>"; };
 		9D84BC292A9F5C6400A394E1 /* CustomLayout.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomLayout.swift; sourceTree = "<group>"; };
@@ -122,6 +124,7 @@
 				9D889BA12A8688FE00B04592 /* MenuViewController.swift */,
 				9D6410F82A828A4200949D4C /* RegistrationController.swift */,
 				9D3581192A856F9200B6D834 /* ReristrViewController.swift */,
+				9D551A1E2AA4AC75006177EB /* ActionViewController.swift */,
 				9D18F4AA2A9789B100A7D89F /* Praxis.swift */,
 				9D84BC292A9F5C6400A394E1 /* CustomLayout.swift */,
 				9D862AA42A826293009CA0D4 /* Info.plist */,
@@ -257,6 +260,7 @@
 				9D35811A2A856F9200B6D834 /* ReristrViewController.swift in Sources */,
 				9D889B9E2A86862100B04592 /* StaticModel.xcdatamodeld in Sources */,
 				9D862A9B2A826291009CA0D4 /* ViewController.swift in Sources */,
+				9D551A1F2AA4AC75006177EB /* ActionViewController.swift in Sources */,
 				9D889BA02A8686DB00B04592 /* CoreDataStack.swift in Sources */,
 				9D889B9A2A86859000B04592 /* UserProfile.swift in Sources */,
 				9D889BA22A8688FE00B04592 /* MenuViewController.swift in Sources */,
