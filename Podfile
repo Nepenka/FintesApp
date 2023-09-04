@@ -8,5 +8,9 @@ target 'FitnessApp' do
   # Pods for FitnessApp
 
 pod 'SnapKit'
+<<<<<<< Updated upstream
+=======
+pod 'SwiftGif'
+>>>>>>> Stashed changes
 
 end
