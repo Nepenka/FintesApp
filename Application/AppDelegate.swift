@@ -12,6 +12,7 @@ import CoreData
 class AppDelegate: UIResponder, UIApplicationDelegate {
 
     var window: UIWindow?
+    let mainTabBarController = MainTabBarController()
     
     lazy var persistentContainer: NSPersistentContainer = {
         let container = NSPersistentContainer(name: "StaticModel")
@@ -32,7 +33,8 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
             let rootViewController = isFirstLaunch ? RegistrationConttroler() : ViewController()
             
             let navigationController = UINavigationController(rootViewController: rootViewController)
-            window?.rootViewController = navigationController
+            window?.rootViewController = MainTabBarController()
+            mainTabBarController.tabBar.barTintColor = UIColor.red
             window?.makeKeyAndVisible()
             
             return true

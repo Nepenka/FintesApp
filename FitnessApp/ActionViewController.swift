@@ -18,13 +18,26 @@ class ActionViewController: UIViewController {
     let testButton: UIButton = .init()
     var timer: Timer?
     var isTimerRunning = false
-    var seconds: Double = 0.0
+    var seconds = 0
+    var milliseconds = 0
+    var minutes = 0
+    let circleView = CircleView()
     
     override func viewDidLoad() {
         super.viewDidLoad()
         view.backgroundColor = UIColor(red: 64/255, green: 224/255, blue: 208/255, alpha: 1)
         navigationItem.hidesBackButton = true
         setupUI()
+        circleView.backgroundColor = UIColor.clear
+        circleView.frame = CGRect(x: 50, y: 50, width: 100, height: 100)
+        view.addSubview(circleView)
+            
+            
+            let centerXconstraint = NSLayoutConstraint(item: circleView, attribute: .centerX, relatedBy: .equal, toItem: timerLabel, attribute: .centerX, multiplier: 1.0, constant: 0.0)
+            let centerYconstraint = NSLayoutConstraint(item: circleView, attribute: .centerY, relatedBy: .equal, toItem: timerLabel, attribute: .centerY, multiplier: 1.0, constant: 0.0)
+            
+            
+            view.addConstraints([centerXconstraint, centerYconstraint])
     }
     
     func setupUI() {
@@ -64,13 +77,14 @@ class ActionViewController: UIViewController {
             make.height.equalTo(45)
         }
         
+    
         view.addSubview(resetButton)
         resetButton.setTitle("RESET", for: .normal)
         resetButton.titleLabel?.textColor = .systemGray2
         resetButton.backgroundColor = .systemBlue
         resetButton.layer.cornerRadius = 10
         resetButton.layer.borderColor = UIColor.darkText.cgColor
-        resetButton.titleLabel?.font = UIFont(name: "Helvetica-Bold", size: 20)
+        resetButton.titleLabel?.font = UIFont(name: "Helvetica-Bold", size: 24)
         resetButton.addTarget(self, action: #selector(resetButtonAction), for: .touchUpInside)
         resetButton.snp.makeConstraints { make in
             make.top.equalTo(startButton.snp.bottom).offset(25)
@@ -78,14 +92,6 @@ class ActionViewController: UIViewController {
             make.height.equalTo(50)
         }
         
-        view.addSubview(testButton)
-        testButton.backgroundColor = .red
-        testButton.addTarget(self, action: #selector(testButtonAction), for: .touchUpInside)
-        
-        testButton.snp.makeConstraints { make in
-            make.bottom.equalTo(timerLabel.snp.top).offset(80)
-            make.right.left.equalToSuperview().inset(100)
-        }
     }
     
     @objc func startButtonAction() {
@@ -95,24 +101,24 @@ class ActionViewController: UIViewController {
         UIView.animate(withDuration: 0.3, animations: {
             self.startButton.backgroundColor = .systemBlue
         })
+        
         if !isTimerRunning {
-                isTimerRunning = true
-                startButton.setTitle("Stop", for: .normal)
-                startButton.backgroundColor = .systemRed
-                stopButton.isEnabled = true
-                resetButton.isEnabled = false
-                timer = Timer.scheduledTimer(timeInterval: 1, target: self, selector: #selector(updateTimer), userInfo: nil, repeats: true)
-            } else {
-                stopButtonAction()
-            }
+            isTimerRunning = true
+            startButton.setTitle("Stop", for: .normal)
+            startButton.backgroundColor = .systemRed
+            stopButton.isEnabled = true
+            resetButton.isEnabled = false
+            timer = Timer.scheduledTimer(timeInterval: 0.001, target: self, selector: #selector(updateTimer), userInfo: nil, repeats: true)
+        } else {
+            stopButtonAction()
+        }
     }
     
     @objc func stopButtonAction() {
         if isTimerRunning {
             isTimerRunning = false
-            startButton.setTitle("Start Training", for: .normal)
+            startButton.setTitle("Start Training!", for: .normal)
             startButton.backgroundColor = .systemBlue
-            //timerLabel.backgroundColor = 
             startButton.isEnabled = true
             stopButton.isEnabled = false
             resetButton.isEnabled = true
@@ -122,33 +128,45 @@ class ActionViewController: UIViewController {
     
     @objc func resetButtonAction() {
         UIView.animate(withDuration: 0.8, animations: {
-                self.startButton.titleLabel?.textColor = .systemGray2
-            })
-            UIView.animate(withDuration: 0.3, animations: {
-                self.startButton.titleLabel?.textColor = .systemBlue
-            })
+            self.resetButton.backgroundColor = .systemGray2
+        })
+        UIView.animate(withDuration: 0.3, animations: {
+            self.resetButton.backgroundColor = .systemBlue
+        })
+        
+        let originalTextColor = startButton.titleLabel?.textColor
+        
+        
+        if isTimerRunning {
             isTimerRunning = false
-        seconds = 0.0
-            timerLabel.text = "00:00,00"
-            startButton.setTitle("Start Training", for: .normal)
-            startButton.isEnabled = true
-            stopButton.isEnabled = false
-            resetButton.isEnabled = false
             timer?.invalidate()
+        }
+        milliseconds = 0
+        seconds = 0
+        minutes = 0
+        
+        timerLabel.text = "00:00.00"
+        startButton.setTitle("Start Training!", for: .normal)
+        startButton.isEnabled = true
+        startButton.titleLabel?.textColor = originalTextColor
+        stopButton.isEnabled = false
+        resetButton.isEnabled = false
     }
     
     
     @objc func updateTimer() {
-        seconds += 0.001
-            let minutes = Int(seconds / 60)
-            let secondsString = String(format: "%02d", Int(seconds) % 60)
-            let millisecondsString = String(format: "%.03f", seconds.truncatingRemainder(dividingBy: 1))
-            timerLabel.text = "\(minutes):\(secondsString),\(millisecondsString.dropFirst(2))"
+        milliseconds += 1
+        if milliseconds == 300 {
+            milliseconds = 0
+            seconds += 1
+            if seconds == 60 {
+                seconds = 0
+                minutes += 1
+            }
+        }
+        
+        timerLabel.text = String(format: "%02d:%02d.%03d", minutes, seconds, milliseconds)
+        
     }
-    
-    @objc func testButtonAction() {
-        let calendarController = CalendarViewController()
-        navigationController?.pushViewController(calendarController, animated: true)
-    }
-    
+       
 }
