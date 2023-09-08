@@ -33,8 +33,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
             let rootViewController = isFirstLaunch ? RegistrationConttroler() : ViewController()
             
             let navigationController = UINavigationController(rootViewController: rootViewController)
-            window?.rootViewController = MainTabBarController()
-            mainTabBarController.tabBar.barTintColor = UIColor.red
+            window?.rootViewController = ViewController()
             window?.makeKeyAndVisible()
             
             return true

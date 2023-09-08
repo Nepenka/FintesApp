@@ -50,7 +50,7 @@ class ActionViewController: UIViewController {
         startButton.addTarget(self, action: #selector(startButtonAction), for: .touchUpInside)
         
         startButton.snp.makeConstraints { make in
-            make.bottom.equalToSuperview().offset(-135)
+            make.bottom.equalToSuperview().offset(-185)
             make.right.left.equalToSuperview().inset(55)
             make.height.equalTo(50)
         }
@@ -89,7 +89,7 @@ class ActionViewController: UIViewController {
         resetButton.snp.makeConstraints { make in
             make.top.equalTo(startButton.snp.bottom).offset(25)
             make.right.left.equalToSuperview().inset(55)
-            make.height.equalTo(50)
+            make.height.equalTo(45)
         }
         
     }

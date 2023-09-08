@@ -26,6 +26,7 @@
 		9D889BA22A8688FE00B04592 /* MenuViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D889BA12A8688FE00B04592 /* MenuViewController.swift */; };
 		9D9F63222AA74D6D00502158 /* CalendarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D9F63212AA74D6D00502158 /* CalendarViewController.swift */; };
 		9DE54ADC2AAA557F004C5948 /* TabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9DE54ADB2AAA557F004C5948 /* TabBarController.swift */; };
+		9DF845752AAB099400DC80FA /* UIColorExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9DF845742AAB099400DC80FA /* UIColorExtension.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -50,6 +51,7 @@
 		9D889BA12A8688FE00B04592 /* MenuViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuViewController.swift; sourceTree = "<group>"; };
 		9D9F63212AA74D6D00502158 /* CalendarViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalendarViewController.swift; sourceTree = "<group>"; };
 		9DE54ADB2AAA557F004C5948 /* TabBarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarController.swift; sourceTree = "<group>"; };
+		9DF845742AAB099400DC80FA /* UIColorExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIColorExtension.swift; sourceTree = "<group>"; };
 		C5E29BE1AB5B813240386270 /* Pods-FitnessApp.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FitnessApp.release.xcconfig"; path = "Target Support Files/Pods-FitnessApp/Pods-FitnessApp.release.xcconfig"; sourceTree = "<group>"; };
 		DECED3F7D65567E8CA53AE0B /* Pods_FitnessApp.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_FitnessApp.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
@@ -132,6 +134,7 @@
 				9D3581192A856F9200B6D834 /* ReristrViewController.swift */,
 				9D551A1E2AA4AC75006177EB /* ActionViewController.swift */,
 				9D18F4AA2A9789B100A7D89F /* Praxis.swift */,
+				9DF845742AAB099400DC80FA /* UIColorExtension.swift */,
 				9D9F63212AA74D6D00502158 /* CalendarViewController.swift */,
 				9D84BC292A9F5C6400A394E1 /* CustomLayout.swift */,
 				9DE54ADB2AAA557F004C5948 /* TabBarController.swift */,
@@ -266,6 +269,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9DF845752AAB099400DC80FA /* UIColorExtension.swift in Sources */,
 				9D35811A2A856F9200B6D834 /* ReristrViewController.swift in Sources */,
 				9DE54ADC2AAA557F004C5948 /* TabBarController.swift in Sources */,
 				9D889B9E2A86862100B04592 /* StaticModel.xcdatamodeld in Sources */,
