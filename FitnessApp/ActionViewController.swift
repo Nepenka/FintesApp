@@ -21,23 +21,12 @@ class ActionViewController: UIViewController {
     var seconds = 0
     var milliseconds = 0
     var minutes = 0
-    let circleView = CircleView()
     
     override func viewDidLoad() {
         super.viewDidLoad()
         view.backgroundColor = UIColor(red: 64/255, green: 224/255, blue: 208/255, alpha: 1)
-        navigationItem.hidesBackButton = true
         setupUI()
-        circleView.backgroundColor = UIColor.clear
-        circleView.frame = CGRect(x: 50, y: 50, width: 100, height: 100)
-        view.addSubview(circleView)
-            
-            
-            let centerXconstraint = NSLayoutConstraint(item: circleView, attribute: .centerX, relatedBy: .equal, toItem: timerLabel, attribute: .centerX, multiplier: 1.0, constant: 0.0)
-            let centerYconstraint = NSLayoutConstraint(item: circleView, attribute: .centerY, relatedBy: .equal, toItem: timerLabel, attribute: .centerY, multiplier: 1.0, constant: 0.0)
-            
-            
-            view.addConstraints([centerXconstraint, centerYconstraint])
+        
     }
     
     func setupUI() {
@@ -109,6 +98,7 @@ class ActionViewController: UIViewController {
             stopButton.isEnabled = true
             resetButton.isEnabled = false
             timer = Timer.scheduledTimer(timeInterval: 0.001, target: self, selector: #selector(updateTimer), userInfo: nil, repeats: true)
+            
         } else {
             stopButtonAction()
         }

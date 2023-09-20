@@ -34,3 +34,4 @@ class CustomLayout: UICollectionViewFlowLayout {
         return CGPoint(x: offset, y: proposedContentOffset.y)
     }
 }
+

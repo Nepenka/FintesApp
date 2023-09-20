@@ -9,12 +9,10 @@
 /* Begin PBXBuildFile section */
 		2E56D10829AE3546DF4793A8 /* Pods_FitnessApp.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DECED3F7D65567E8CA53AE0B /* Pods_FitnessApp.framework */; };
 		9D18F4AB2A9789B200A7D89F /* Praxis.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D18F4AA2A9789B100A7D89F /* Praxis.swift */; };
-		9D21B8742AAA42AE005AF57D /* CircleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D21B8732AAA42AE005AF57D /* CircleView.swift */; };
 		9D35811A2A856F9200B6D834 /* ReristrViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D3581192A856F9200B6D834 /* ReristrViewController.swift */; };
 		9D551A1F2AA4AC75006177EB /* ActionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D551A1E2AA4AC75006177EB /* ActionViewController.swift */; };
 		9D5F5ABD2A83D0E200B685EE /* Padding.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D5F5ABC2A83D0E200B685EE /* Padding.swift */; };
 		9D6410F92A828A4200949D4C /* RegistrationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D6410F82A828A4200949D4C /* RegistrationController.swift */; };
-		9D84BC2A2A9F5C6400A394E1 /* CustomLayout.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D84BC292A9F5C6400A394E1 /* CustomLayout.swift */; };
 		9D862A972A826291009CA0D4 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D862A962A826291009CA0D4 /* AppDelegate.swift */; };
 		9D862A992A826291009CA0D4 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D862A982A826291009CA0D4 /* SceneDelegate.swift */; };
 		9D862A9B2A826291009CA0D4 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D862A9A2A826291009CA0D4 /* ViewController.swift */; };
@@ -24,20 +22,18 @@
 		9D889B9E2A86862100B04592 /* StaticModel.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 9D889B9C2A86862100B04592 /* StaticModel.xcdatamodeld */; };
 		9D889BA02A8686DB00B04592 /* CoreDataStack.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D889B9F2A8686DB00B04592 /* CoreDataStack.swift */; };
 		9D889BA22A8688FE00B04592 /* MenuViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D889BA12A8688FE00B04592 /* MenuViewController.swift */; };
-		9D9F63222AA74D6D00502158 /* CalendarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D9F63212AA74D6D00502158 /* CalendarViewController.swift */; };
-		9DE54ADC2AAA557F004C5948 /* TabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9DE54ADB2AAA557F004C5948 /* TabBarController.swift */; };
-		9DF845752AAB099400DC80FA /* UIColorExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9DF845742AAB099400DC80FA /* UIColorExtension.swift */; };
+		9D8BF3882ABB654900D6F334 /* HistoryPraxisViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D8BF3872ABB654900D6F334 /* HistoryPraxisViewController.swift */; };
+		9D8BF38A2ABB6DFD00D6F334 /* WorkoutInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D8BF3892ABB6DFD00D6F334 /* WorkoutInfo.swift */; };
+		9DA141BC2ABB5C1C003B593C /* CustomLayout.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9DA141BB2ABB5C1C003B593C /* CustomLayout.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		27914140EDA6A99D24136BC6 /* Pods-FitnessApp.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FitnessApp.debug.xcconfig"; path = "Target Support Files/Pods-FitnessApp/Pods-FitnessApp.debug.xcconfig"; sourceTree = "<group>"; };
 		9D18F4AA2A9789B100A7D89F /* Praxis.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Praxis.swift; sourceTree = "<group>"; };
-		9D21B8732AAA42AE005AF57D /* CircleView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CircleView.swift; sourceTree = "<group>"; };
 		9D3581192A856F9200B6D834 /* ReristrViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReristrViewController.swift; sourceTree = "<group>"; };
 		9D551A1E2AA4AC75006177EB /* ActionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ActionViewController.swift; sourceTree = "<group>"; };
 		9D5F5ABC2A83D0E200B685EE /* Padding.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Padding.swift; sourceTree = "<group>"; };
 		9D6410F82A828A4200949D4C /* RegistrationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegistrationController.swift; sourceTree = "<group>"; };
-		9D84BC292A9F5C6400A394E1 /* CustomLayout.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomLayout.swift; sourceTree = "<group>"; };
 		9D862A932A826291009CA0D4 /* FitnessApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FitnessApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		9D862A962A826291009CA0D4 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		9D862A982A826291009CA0D4 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -49,9 +45,9 @@
 		9D889B9D2A86862100B04592 /* StaticModel.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = StaticModel.xcdatamodel; sourceTree = "<group>"; };
 		9D889B9F2A8686DB00B04592 /* CoreDataStack.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoreDataStack.swift; sourceTree = "<group>"; };
 		9D889BA12A8688FE00B04592 /* MenuViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuViewController.swift; sourceTree = "<group>"; };
-		9D9F63212AA74D6D00502158 /* CalendarViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalendarViewController.swift; sourceTree = "<group>"; };
-		9DE54ADB2AAA557F004C5948 /* TabBarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarController.swift; sourceTree = "<group>"; };
-		9DF845742AAB099400DC80FA /* UIColorExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIColorExtension.swift; sourceTree = "<group>"; };
+		9D8BF3872ABB654900D6F334 /* HistoryPraxisViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HistoryPraxisViewController.swift; sourceTree = "<group>"; };
+		9D8BF3892ABB6DFD00D6F334 /* WorkoutInfo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WorkoutInfo.swift; sourceTree = "<group>"; };
+		9DA141BB2ABB5C1C003B593C /* CustomLayout.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomLayout.swift; sourceTree = "<group>"; };
 		C5E29BE1AB5B813240386270 /* Pods-FitnessApp.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FitnessApp.release.xcconfig"; path = "Target Support Files/Pods-FitnessApp/Pods-FitnessApp.release.xcconfig"; sourceTree = "<group>"; };
 		DECED3F7D65567E8CA53AE0B /* Pods_FitnessApp.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_FitnessApp.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
@@ -134,11 +130,9 @@
 				9D3581192A856F9200B6D834 /* ReristrViewController.swift */,
 				9D551A1E2AA4AC75006177EB /* ActionViewController.swift */,
 				9D18F4AA2A9789B100A7D89F /* Praxis.swift */,
-				9DF845742AAB099400DC80FA /* UIColorExtension.swift */,
-				9D9F63212AA74D6D00502158 /* CalendarViewController.swift */,
-				9D84BC292A9F5C6400A394E1 /* CustomLayout.swift */,
-				9DE54ADB2AAA557F004C5948 /* TabBarController.swift */,
-				9D21B8732AAA42AE005AF57D /* CircleView.swift */,
+				9D8BF3872ABB654900D6F334 /* HistoryPraxisViewController.swift */,
+				9DA141BB2ABB5C1C003B593C /* CustomLayout.swift */,
+				9D8BF3892ABB6DFD00D6F334 /* WorkoutInfo.swift */,
 				9D862AA42A826293009CA0D4 /* Info.plist */,
 				9D862A942A826291009CA0D4 /* Products */,
 			);
@@ -269,22 +263,20 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				9DF845752AAB099400DC80FA /* UIColorExtension.swift in Sources */,
 				9D35811A2A856F9200B6D834 /* ReristrViewController.swift in Sources */,
-				9DE54ADC2AAA557F004C5948 /* TabBarController.swift in Sources */,
 				9D889B9E2A86862100B04592 /* StaticModel.xcdatamodeld in Sources */,
 				9D862A9B2A826291009CA0D4 /* ViewController.swift in Sources */,
 				9D551A1F2AA4AC75006177EB /* ActionViewController.swift in Sources */,
+				9D8BF3882ABB654900D6F334 /* HistoryPraxisViewController.swift in Sources */,
+				9D8BF38A2ABB6DFD00D6F334 /* WorkoutInfo.swift in Sources */,
 				9D889BA02A8686DB00B04592 /* CoreDataStack.swift in Sources */,
 				9D889B9A2A86859000B04592 /* UserProfile.swift in Sources */,
-				9D21B8742AAA42AE005AF57D /* CircleView.swift in Sources */,
 				9D889BA22A8688FE00B04592 /* MenuViewController.swift in Sources */,
-				9D84BC2A2A9F5C6400A394E1 /* CustomLayout.swift in Sources */,
 				9D5F5ABD2A83D0E200B685EE /* Padding.swift in Sources */,
+				9DA141BC2ABB5C1C003B593C /* CustomLayout.swift in Sources */,
 				9D18F4AB2A9789B200A7D89F /* Praxis.swift in Sources */,
 				9D862A972A826291009CA0D4 /* AppDelegate.swift in Sources */,
 				9D6410F92A828A4200949D4C /* RegistrationController.swift in Sources */,
-				9D9F63222AA74D6D00502158 /* CalendarViewController.swift in Sources */,
 				9D862A992A826291009CA0D4 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

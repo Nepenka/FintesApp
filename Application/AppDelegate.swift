@@ -1,10 +1,3 @@
-//
-//  AppDelegate.swift
-//  FitnessApp
-//
-//  Created by 123 on 8.08.23.
-//
-
 import UIKit
 import CoreData
 
@@ -12,7 +5,6 @@ import CoreData
 class AppDelegate: UIResponder, UIApplicationDelegate {
 
     var window: UIWindow?
-    let mainTabBarController = MainTabBarController()
     
     lazy var persistentContainer: NSPersistentContainer = {
         let container = NSPersistentContainer(name: "StaticModel")
@@ -33,7 +25,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
             let rootViewController = isFirstLaunch ? RegistrationConttroler() : ViewController()
             
             let navigationController = UINavigationController(rootViewController: rootViewController)
-            window?.rootViewController = ViewController()
+            window?.rootViewController = navigationController
             window?.makeKeyAndVisible()
             
             return true
@@ -56,6 +48,3 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         }
     }
 }
-
-
-

@@ -17,6 +17,7 @@ class RegistrationConttroler: UIViewController {
     let loginButton: UIButton = .init()
     let signLabel: UILabel = .init()
     let registerButton: UIButton = .init()
+    var isLoggedIn = false
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -24,6 +25,7 @@ class RegistrationConttroler: UIViewController {
         setupUI()
         navigationItem.hidesBackButton = true
         checkUser(login: "", password: "")
+        handleSuccessfulLogin()
     }
     
     func loginUser(login: String, password: String) {
@@ -170,9 +172,15 @@ class RegistrationConttroler: UIViewController {
             alertController.addAction(okAction)
             present(alertController, animated: true, completion: nil)
         }
-        
-        
     }
+    
+    func handleSuccessfulLogin() {
+        isLoggedIn = true
+
+        NotificationCenter.default.post(name: Notification.Name("SuccessfulLogin"), object: nil)
+        print("Я работаю")
+    }
+
     
     func checkUser(login: String, password: String) -> UserAccount? {
         guard let appDelegate = UIApplication.shared.delegate as? AppDelegate else {

@@ -15,6 +15,7 @@ class MenuViewController: UIViewController {
     let textLabel = UILabel()
     private let collectionView = UICollectionView(frame: .zero, collectionViewLayout: UICollectionViewLayout())
     let exercise = Praxis.praxis
+    let historyButton: UIButton = .init()
    
     private let layout = CustomLayout()
     var itemW: CGFloat {
@@ -24,6 +25,8 @@ class MenuViewController: UIViewController {
         return itemW * 1.45
     }
     let exerciseImages = Praxis.praxisImage
+    var selectedExercise: String?
+    var workoutHistory: [WorkoutInfo] = []
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -52,10 +55,37 @@ class MenuViewController: UIViewController {
             make.left.right.equalToSuperview().inset(55)
         }
         
+        historyButton.setImage(UIImage(systemName: "memories"), for: .normal)
+        historyButton.addTarget(self, action: #selector(historyButtonAction), for: .touchUpInside)
+        view.addSubview(historyButton)
+        historyButton.snp.makeConstraints { make in
+            make.top.equalToSuperview().inset(120)
+            make.left.equalTo(textLabel.snp.right).offset(25)
+        }
+        
+        
+        
+        
+    }
+    
+    @objc func historyButtonAction() {
+        
+            let currentDate = Date()
+            let workoutInfo = WorkoutInfo(exerciseType: selectedExercise ?? "", date: currentDate)
+            
+            
+            let historyViewController = HistoryPraxisViewController()
+            historyViewController.workoutHistory.append(workoutInfo)
+            
+            
+            navigationController?.pushViewController(historyViewController, animated: true)
+        }
+
+        
     }
     
     
-}
+
 
 extension MenuViewController {
     private func setupViews() {
@@ -117,6 +147,7 @@ extension MenuViewController: UICollectionViewDataSource {
 
 extension MenuViewController: UICollectionViewDelegate {
     func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
+        
         let actionController = ActionViewController()
         navigationController?.pushViewController(actionController, animated: true)
     }
